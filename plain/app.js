@@ -1,10 +1,5 @@
-var simulation = {
-  init : function() {
-    alert("Hello, World!");
-  }
-};
+var app = angular.module('simulationApp', []);
 
-(function() {
-  simulation.init();
-})();
-
+app.controller('mainCtrl', function($scope) {
+    $scope.name = "World";
+});

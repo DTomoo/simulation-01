@@ -1,8 +1,14 @@
-<html>
+<!DOCTYPE html>
+<html lang="en-US">
 <head>
-</head
-<body>
-Hello, World!
+ <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+</head>
+<body ng-app="simulationApp">
+
+<div ng-controller="mainCtrl">
+<h1>Hello, {{ name }}!</h1>
+Name: <input ng-model="name" />
+</div>
 
 <script type="application/javascript" src="app.js"></script>
 </body>
