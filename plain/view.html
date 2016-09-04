@@ -6,9 +6,19 @@
 <body ng-app="simulationApp">
 
 <div ng-controller="mainCtrl">
-<h1>Hello, {{ name }}!</h1>
-Name: <input ng-model="name" />
+<p>Age: {{ age }} Display-age: {{ displayAge }}</p>
+<p>interval: <input ng-model="interval" /></p>
+<p>displayEveryXthStep: <input ng-model="displayEveryXthStep" /></p>
+<div>
+<button ng-click="start();">Start</button>
+<button ng-click="stop();">Stop</button>
+<button ng-click="reset();">Reset</button>
 </div>
+
+</div>
+
+
+
 
 <script type="application/javascript" src="app.js"></script>
 </body>
